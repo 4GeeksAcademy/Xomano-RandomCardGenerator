@@ -1,12 +1,13 @@
-*, body {
+body {
   margin: 0px;
   padding: 0px;
-  /* flex-direction: column; */
 }
 
 .container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: green;
 }
 .card-border{
   flex-direction: column;
@@ -19,14 +20,14 @@
 }
 
 .card{
-  width: auto;
-  height: auto;
+  width: fit-content;
+  height: fit-content;
   background-color: #f2f2f2; 
   border-radius: 10px;
   margin: 15px;
   text-align: center;
   display: flex;
-  justify-items: center;
+  justify-content: space-between;
 }
 
 .card-number{
@@ -67,6 +68,7 @@
   display: flex;
   justify-content: center;
   font-family: calibri;
+  
 }
 
 .btn-generate{
